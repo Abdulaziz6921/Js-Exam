@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./home.css" />
+    <script defer src="./login.js"></script>
+    <script defer src="./home.js"></script>
+  </head>
+  <body>
+    <!-- Navbar Starts -->
+    <nav>
+      <div class="left_side">
+        <div class="bar" onclick="Open()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="logo">
+          <a href="./index.html">
+            <img
+              src="https://img.123moviesgo.ac/xxrz/400x400/100/c2/c8/c2c8a362581361e0ae94e496de45c09e/c2c8a362581361e0ae94e496de45c09e.png"
+              alt="123movies logo"
+          /></a>
+        </div>
+        <div class="browse">
+          <button onclick="Open()">
+            <i class="fa-solid fa-bars"></i>Browse
+          </button>
+        </div>
+
+        <div class="right_slider"></div>
+        <div class="left_slider">
+          <i onclick="Close()" class="fa-solid fa-circle-arrow-left"></i>
+          <div class="li_collection">
+            <li>
+              <a href="./home.html"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li>
+              <a href="./movies.html"
+                ><i class="fa-solid fa-circle-play"></i> Movies</a
+              >
+            </li>
+            <li>
+              <a href="./Tv_shows.html"
+                ><i class="fa-solid fa-video"></i> Tv Shows</a
+              >
+            </li>
+            <li>
+              <a href="./Tv_shows.html"
+                ><i class="fa-brands fa-imdb"></i> Top IMBD</a
+              >
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-android"></i> Android Apps</a>
+            </li>
+          </div>
+        </div>
+
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Enter keywords..." />
+        </div>
+      </div>
+
+      <div class="right_side">
+        <p id="sign_out" style="display: none">
+          <i class="fa-solid fa-door-open"></i> Log out
+        </p>
+        <div class="user_name"></div>
+
+        <button id="login" onclick="Open2()">
+          <i id="mg2" class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-user"></i>
+          <p>Login</p>
+        </button>
+        <div class="container_log"></div>
+        <div class="Login login-1">
+          <div class="login">
+            <div onclick="Close2()" class="xmark">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <h2>Welcome back!</h2>
+            <fieldset>
+              <legend>Email address</legend>
+              <input
+                type="email"
+                placeholder="name@email.com"
+                required
+                id="input"
+              />
+            </fieldset>
+
+            <fieldset>
+              <legend>Password</legend>
+              <input type="password" placeholder="Password" id="input2" />
+            </fieldset>
+
+            <div class="forgot">
+              <form action="">
+                <input type="checkbox" /><label for="">Remember me</label>
+              </form>
+
+              <p>Forgot password ?</p>
+            </div>
+
+            <button onclick="signIn()">Login</button>
+          </div>
+          <div class="btns">
+            <button style="background-color: #fff"><p>Login</p></button>
+            <button id="register"><p>Register</p></button>
+          </div>
+        </div>
+
+        <div class="Login login-2">
+          <div class="login" style="height: 450px">
+            <div onclick="Close2()" class="xmark">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <h2>Create an account</h2>
+            <fieldset>
+              <legend>Your Name</legend>
+              <input type="text" placeholder="Name" required />
+            </fieldset>
+            <fieldset>
+              <legend>Email address</legend>
+              <input type="email" placeholder="name@email.com" required />
+            </fieldset>
+
+            <fieldset>
+              <legend>Password</legend>
+              <input type="password" placeholder="Password" />
+            </fieldset>
+            <fieldset>
+              <legend>Confirm Password</legend>
+              <input type="password" placeholder="Confirm Password" />
+            </fieldset>
+
+            <button>Login</button>
+          </div>
+          <div class="btns">
+            <button id="login_btn"><p>Login</p></button>
+            <button style="background-color: #fff">
+              <p>Register</p>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar Ends -->
+
+    <!-- Main part -->
+    <main>
+      <!-- Section 1 Starts -->
+
+      <section class="section1">
+        <div class="carousel">
+          <div class="slide-container">
+            <div class="slide active">
+              <img
+                src="https://img.123moviesgo.ac/xxrz/1200x600/200/6f/ae/6faeac08d8657b07f468f5f664ebdaca/6faeac08d8657b07f468f5f664ebdaca.jpg"
+                alt=""
+                class="big_img"
+              />
+              <img
+                src="https://img.123moviesgo.ac/xxrz/250x400/200/a8/e5/a8e55671d0488843405ce3261290a5a0/a8e55671d0488843405ce3261290a5a0.jpg"
+                alt=""
+                class="small_img"
+              />
+              <a href="./Selected.html"
+                ><i class="fa-regular fa-circle-play" id="play"></i
+              ></a>
+              <div class="movie_info">
+                <div class="name">
+                  <h1>House of the Dragon</h1>
+                </div>
+                <div class="rate">
+                  <i class="fa-solid fa-star"></i> <span>8.8</span>
+                  <span style="font-weight: 600">HD</span>
+                  <span>S1:E4</span>
+                </div>
+                <div class="description">
+                  <p>
+                    The prequel series finds the Targaryen dynasty at the
+                    absolute apex of its power, with more than 15 dragons under
+                    their yoke. Most empires—real and imagined—crumble from such
+                    heights. In the case of the Targaryens, their slow fall
+                    begins almost 193 years before the events of Game of
+                    Thrones, when King Viserys Targaryen breaks with a century
+                    of tradition by naming his daughter Rhaenyra heir to the
+                    Iron Throne. But when Viserys later fathers a son, the court
+                    is shocked when Rhaenyra retains her status as his heir, and
+                    seeds of division sow friction across the realm.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.123moviesgo.ac/xxrz/1200x600/200/4d/a3/4da30f8c35b7547f8d62d7e02ef6c3ce/4da30f8c35b7547f8d62d7e02ef6c3ce.jpg"
+                alt=""
+                class="big_img"
+              />
+              <img
+                src="https://img.123moviesgo.ac/xxrz/250x400/200/81/01/8101c3219275bd633919d8a94416064e/8101c3219275bd633919d8a94416064e.jpg"
+                alt=""
+                class="small_img"
+              />
+              <a href="./Selected.html"
+                ><i class="fa-regular fa-circle-play" id="play"></i
+              ></a>
+              <div class="movie_info">
+                <div class="name">
+                  <h1>The Lord of the Rings: The Rings of Power</h1>
+                </div>
+                <div class="rate">
+                  <i class="fa-solid fa-star"></i> <span>6.9</span>
+                  <span style="font-weight: 600">HD</span>
+                  <span>S1:E3</span>
+                </div>
+                <div class="description">
+                  <p>
+                    Beginning in a time of relative peace, we follow an ensemble
+                    cast of characters as they confront the re-emergence of evil
+                    to Middle-earth. From the darkest depths of the Misty
+                    Mountains, to the majestic forests of Lindon, to the
+                    breathtaking island kingdom of Númenor, to the furthest
+                    reaches of the map, these kingdoms and characters will carve
+                    out legacies that live on long after they are gone.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.123moviesgo.ac/xxrz/1200x600/200/91/b1/91b129f062e84a842ff7a1dd11de3efe/91b129f062e84a842ff7a1dd11de3efe.jpg"
+                alt=""
+                class="big_img"
+              />
+              <img
+                src="https://img.123moviesgo.ac/xxrz/250x400/200/df/33/df33bd60036fa5c002cd80b4b250c2f9/df33bd60036fa5c002cd80b4b250c2f9.jpg"
+                alt=""
+                class="small_img"
+              />
+              <a href="./Selected.html"
+                ><i
+                  class="fa-regular fa-circle-play"
+                  id="play"
+                  style="bottom: 90px"
+                ></i
+              ></a>
+              <div class="movie_info" style="height: 125px">
+                <div class="name">
+                  <h1>Beast</h1>
+                </div>
+                <div class="rate">
+                  <i class="fa-solid fa-star"></i> <span>5.7</span>
+                  <span style="font-weight: 600">HD</span>
+                </div>
+                <div class="description">
+                  <p>
+                    A recently widowed man and his two teenage daughters travel
+                    to a game reserve in South Africa. However, their journey of
+                    healing soon turns into a fight for survival when a
+                    bloodthirsty lion starts to stalk them.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.123moviesgo.ac/xxrz/1200x600/200/01/53/01536d151ea4b0c546300cec657f9f8d/01536d151ea4b0c546300cec657f9f8d.jpg"
+                alt=""
+                class="big_img"
+              />
+              <img
+                src="https://img.123moviesgo.ac/xxrz/250x400/200/86/5f/865f826f3730f83eb20c5999c1ef27b9/865f826f3730f83eb20c5999c1ef27b9.jpg"
+                alt=""
+                class="small_img"
+              />
+              <a href="./Selected.html"
+                ><i
+                  class="fa-regular fa-circle-play"
+                  id="play"
+                  style="bottom: 65px"
+                ></i
+              ></a>
+              <div class="movie_info" style="height: 100px">
+                <div class="name">
+                  <h1>Thor: Love and Thunder</h1>
+                </div>
+                <div class="rate">
+                  <i class="fa-solid fa-star"></i> <span>6.5</span>
+                  <span style="font-weight: 600">HD</span>
+                </div>
+                <div class="description">
+                  <p>
+                    The fouth installment of the Marvel Studios' Thor movie
+                    series
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.123moviesgo.ac/xxrz/1200x600/200/63/a4/63a452e9636d208c5849d663f38f683e/63a452e9636d208c5849d663f38f683e.jpg"
+                alt=""
+                class="big_img"
+              />
+              <img
+                src="https://img.123moviesgo.ac/xxrz/250x400/200/20/45/2045816a99ab39150867ca6945b29e2b/2045816a99ab39150867ca6945b29e2b.jpg"
+                alt=""
+                class="small_img"
+              />
+              <a href="./Selected.html"
+                ><i
+                  class="fa-regular fa-circle-play"
+                  id="play"
+                  style="bottom: 160px"
+                ></i
+              ></a>
+              <div class="movie_info" style="height: 190px">
+                <div class="name">
+                  <h1>Wire Room</h1>
+                </div>
+                <div class="rate">
+                  <i class="fa-solid fa-star"></i> <span>3.6</span>
+                  <span style="font-weight: 600">HD</span>
+                </div>
+                <div class="description">
+                  <p>
+                    New recruit Justin Rosa must monitor arms-smuggling cartel
+                    member Eddie Flynn — and keep him alive at all costs. When a
+                    SWAT team descends on Flynn’s home, Rosa breaks protocol and
+                    contacts the gangster directly to save his life. As gunmen
+                    break into the Wire Room and chaos erupts, Mueller and Rosa
+                    make a final, desperate stand against the corrupt agents and
+                    officials who seek to destroy evidence and kill them both.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.123moviesgo.ac/xxrz/1200x600/200/87/ab/87aba9dca625a1365b723418e9a56ef2/87aba9dca625a1365b723418e9a56ef2.jpg"
+                alt=""
+                class="big_img"
+              />
+              <img
+                src="https://img.123moviesgo.ac/xxrz/250x400/200/8c/76/8c76f7ba1f8d85c3c260b7347e1e64cc/8c76f7ba1f8d85c3c260b7347e1e64cc.jpg"
+                alt=""
+                class="small_img"
+              />
+              <a href="./Selected.html">
+                <i
+                  class="fa-regular fa-circle-play"
+                  id="play"
+                  style="bottom: 90px"
+                ></i
+              ></a>
+              <div class="movie_info" style="height: 125px">
+                <div class="name">
+                  <h1>Top Gun: Maverick</h1>
+                </div>
+                <div class="rate">
+                  <i class="fa-solid fa-star"></i> <span>8.5</span>
+                  <span style="font-weight: 600">HD</span>
+                </div>
+                <div class="description">
+                  <p>
+                    Set in the world of drone technology and fifth generation
+                    fighters, this sequel will explore the end of the era of
+                    dogfighting.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="https://img.123moviesgo.ac/xxrz/1200x600/200/94/31/9431028e685cc32efb212baa991b76c6/9431028e685cc32efb212baa991b76c6.jpg"
+                alt=""
+                class="big_img"
+              />
+              <img
+                src="http://127.0.0.1:5501/Exam/images/secret%20hdqrts.jpg"
+                alt=""
+                class="small_img"
+              />
+              <a href="./Selected.html"
+                ><i
+                  class="fa-regular fa-circle-play"
+                  id="play"
+                  style="bottom: 95px"
+                ></i
+              ></a>
+              <div class="movie_info" style="height: 125px">
+                <div class="name">
+                  <h1>Secret headquarters</h1>
+                </div>
+                <div class="rate">
+                  <i class="fa-solid fa-star"></i> <span>4.9</span>
+                  <span style="font-weight: 600">HD</span>
+                </div>
+                <div class="description">
+                  <p>
+                    While hanging out after school, Charlie and his friends
+                    discover the headquarters of the world’s most powerful
+                    superhero hidden beneath his home. When villains attack,
+                    they must team up to defend the headquarters and save the
+                    world.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="./images/0783dd0807f94b9490255da163686df8.jpg"
+                alt=""
+                class="big_img"
+              />
+              <img
+                src="https://img.123moviesgo.ac/xxrz/250x400/200/aa/8a/aa8ac28aea532136d24a7cf513fa6385/aa8ac28aea532136d24a7cf513fa6385.jpg"
+                alt=""
+                class="small_img"
+              />
+              <a href="./Selected.html"
+                ><i
+                  class="fa-regular fa-circle-play"
+                  id="play"
+                  style="bottom: 80px"
+                ></i
+              ></a>
+              <div class="movie_info" style="height: 115px">
+                <div class="name">
+                  <h1>Day Shift</h1>
+                </div>
+                <div class="rate">
+                  <i class="fa-solid fa-star"></i> <span>6.1</span>
+                  <span style="font-weight: 600">HD</span>
+                </div>
+                <div class="description">
+                  <p>
+                    An LA vampire hunter has a week to come up with the cash to
+                    pay for his kid's tuition and braces. Trying to make a
+                    living these days just might kill him.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <img
+                src="./images/fef632e57cf8207c2ad47d5859780ce2.jpg"
+                alt=""
+                class="big_img"
+              />
+              <img
+                src="https://img.123moviesgo.ac/xxrz/250x400/200/25/18/251888549f5ae476d08db67ad576c63e/251888549f5ae476d08db67ad576c63e.jpg"
+                alt=""
+                class="small_img"
+              />
+              <a href="./Selected.html"
+                ><i
+                  class="fa-regular fa-circle-play"
+                  id="play"
+                  style="bottom: 90px"
+                ></i
+              ></a>
+              <div class="movie_info" style="height: 125px">
+                <div class="name">
+                  <h1>Minions: Rise of Gru</h1>
+                </div>
+                <div class="rate">
+                  <i class="fa-solid fa-star"></i> <span>6.6</span>
+                  <span style="font-weight: 600">HD</span>
+                </div>
+                <div class="description">
+                  <p>
+                    A fanboy of a supervillain supergroup known as the Vicious
+                    6, Gru hatches a plan to become evil enough to join them,
+                    with the backup of his followers, the Minions.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- icon from icons8  https://icons8.com/icon /a> -->
+            <div class="button">
+              <img
+                id="prev"
+                class="prev"
+                src="https://img.icons8.com/ios-glyphs/30/000000/circled-chevron-left.png"
+                onmouseover="prehover(this)"
+                onmouseout="prenothover(this)"
+                onclick="prevFrame()"
+              />
+              <img
+                id="next"
+                class="next"
+                src="https://img.icons8.com/ios-glyphs/30/000000/circled-chevron-right.png"
+                onmouseover="nexthover(this)"
+                onmouseout="nextnothover(this)"
+                onclick="nextFrame()"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="related">
+          <div class="movies">
+            <div class="movie">
+              <div class="img">
+                <img
+                  src="https://img.123moviesgo.ac/xxrz/250x400/200/ea/7b/ea7bb5210eac753044bada088c174b56/ea7bb5210eac753044bada088c174b56.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <p>
+                  <i class="fa-solid fa-star"></i> <span>5.4</span>
+                  <span style="font-weight: 600">HD</span>
+                </p>
+                <p>Paradise Highway</p>
+                <p style="font-size: 13px">
+                  A truck driver has been forced to smuggle illicit cargo to
+                  save her brother...
+                </p>
+                <a href="./Selected.html"
+                  ><button>
+                    <i class="fa-solid fa-play"></i> Watch now
+                  </button></a
+                >
+              </div>
+            </div>
+            <div class="movie">
+              <div class="img">
+                <img
+                  src="https://img.123moviesgo.ac/xxrz/250x400/200/14/03/14037c93e63707d74546fc305acc2c7a/14037c93e63707d74546fc305acc2c7a.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <p>
+                  <i class="fa-solid fa-star"></i> <span>6.5</span>
+                  <span style="font-weight: 600">HD</span>
+                </p>
+                <p>The Gray Man</p>
+                <p style="font-size: 13px">
+                  When the CIA's most skilled mercenary known as Court Gentry,
+                  aka Sierra Six...
+                </p>
+                <a href="./Selected.html"
+                  ><button>
+                    <i class="fa-solid fa-play"></i> Watch now
+                  </button></a
+                >
+              </div>
+            </div>
+            <div class="movie">
+              <div class="img">
+                <img
+                  src="https://img.123moviesgo.ac/xxrz/250x400/200/b7/cd/b7cdcae779b9ae50ff9122109b6271b0/b7cdcae779b9ae50ff9122109b6271b0.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="info">
+                <p>
+                  <i class="fa-solid fa-star"></i> <span>6.2</span>
+                  <span style="font-weight: 600">HD</span>
+                </p>
+                <p>Ms. Marvel</p>
+                <p style="font-size: 13px">
+                  A great student, avid gamer, and voracious fan-fic scribe,
+                  Kamala Khan...
+                </p>
+                <a href="./Selected.html"
+                  ><button>
+                    <i class="fa-solid fa-play"></i> Watch now
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="links">
+            <p>Share with</p>
+            <i class="fa-brands fa-facebook" style="color: #3a5896"></i>
+            <i class="fa-brands fa-twitter" style="color: #1da1f2"></i>
+            <i class="fa-brands fa-telegram" style="color: #0088cc"></i>
+            <i class="fa-solid fa-circle-plus" style="color: #ff6550"></i>
+          </div>
+        </div>
+      </section>
+      <div class="site_info">
+        <p>
+          123movies is the most trusted website for Free hd movies streaming, we
+          have over 300000 movies and tv-show episodes in our database, all in
+          HD with multi-language subtitles. You can watch and download all the
+          hd movies for free with no account required.
+        </p>
+      </div>
+
+      <!-- Section 1 ends -->
+
+      <!-- Section 2 Starts -->
+
+      <section class="section2">
+        <div class="trending_title">
+          <h2>Trending</h2>
+          <div class="movies_shows">
+            <p title="Trending Movies" class="active">
+              <i class="fa-solid fa-circle-play"></i> Movies
+            </p>
+            <p title="Trending Tv Shows">
+              <i class="fa-solid fa-bars"></i> Tv Shows
+            </p>
+          </div>
+        </div>
+
+        <div class="trending_movies"></div>
+      </section>
+
+      <!-- Section 2 Ends -->
+
+      <!-- Footer Starts  -->
+      <footer>
+        <div class="terms_of_use">
+          <a href="">Android App</a>
+          <a href="">Terms of service</a><a href="">Contact</a
+          ><a href="">Sitemap</a>
+        </div>
+        <p>
+          123moviesgo.tv is a Free Movies streaming site with zero ads. We let
+          you watch movies online without having to register or paying, with
+          over 10000 movies and TV-Series. You can also Download full movies
+          from MoviesCloud and watch it later if you want.
+        </p>
+
+        <p style="color: black">&copf; 123moviesgo.tv</p>
+      </footer>
+      <!-- Footer Ends  -->
+    </main>
+  </body>
+</html>
