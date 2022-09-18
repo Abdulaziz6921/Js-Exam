@@ -472,7 +472,7 @@ nav {
 
   .right_side > button {
     justify-content: flex-end;
-    margin-right: 5px;
+    margin-right: 10%;
   }
 
   .right_side > button > p {
@@ -486,7 +486,7 @@ nav {
   .right_side > button > i {
     display: block;
     font-size: 20px;
-    margin-right: 0;
+    margin-right: 5px;
   }
 }
 
@@ -910,6 +910,13 @@ nav {
     height: 80px;
     flex-direction: column;
     align-items: flex-start;
+    margin-left: 3%;
+  }
+
+  .trending_title > h2::before {
+    content: "";
+    background: var(--btn);
+    border: 2px solid var(--btn);
   }
 
   .movies_shows {
@@ -1315,11 +1322,11 @@ p.format > span {
   display: none;
   align-items: center;
   justify-content: center;
+  overflow: auto;
 }
 
 @media screen and (max-width: 700px) {
   .user_name {
-    padding: 0px 5px;
-    margin-right: -20%;
+    padding: 0px 7px;
   }
 }
