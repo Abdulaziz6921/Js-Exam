@@ -2,8 +2,8 @@
   --primary: #e5e5e5;
   --white: #fff;
   --btn: #08ab4b;
-  --border: 2px solid red;
-  --border2: 2px solid green;
+  /* --border: 2px solid red;
+  --border2: 2px solid green; */
 }
 * {
   margin: 0;
@@ -85,8 +85,6 @@ body {
 .container_log {
   width: 100%;
   height: 100vh;
-  /* display: flex; */
-  border: 5px solid green;
   background: rgba(0, 0, 0, 0.9);
   position: absolute;
   top: 0;
@@ -97,7 +95,6 @@ body {
 .inner_cont {
   width: 100%;
   height: 100vh;
-  border: 6px solid blue;
   position: absolute;
   top: 0;
   left: 0;
@@ -111,7 +108,6 @@ body {
 .Login {
   width: fit-content;
   height: fit-content;
-  border: 6px solid blue;
   margin: auto;
   position: absolute;
   top: 180px;
@@ -129,7 +125,6 @@ body {
   width: 440px;
   height: 350px;
   border-radius: 8%;
-  border: 3px solid red;
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -204,7 +199,6 @@ fieldset > input:-webkit-autofill {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid red;
   font-size: 14px;
   letter-spacing: 0.5px;
 }
@@ -226,6 +220,7 @@ fieldset > input:-webkit-autofill {
   font-size: 16px;
   color: var(--white);
   letter-spacing: 0.5px;
+  border: none;
 }
 .login > button:hover {
   background-color: #08ab4ceb;
@@ -234,7 +229,6 @@ fieldset > input:-webkit-autofill {
 .btns {
   width: 45px;
   height: 225px;
-  border: 3px solid red;
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -395,13 +389,13 @@ nav {
 .search > i {
   width: 5%;
   height: 100%;
-  margin: 8px 0 8px 10px;
+  margin: 14px 0 8px 10px;
   font-size: 14px;
 }
 
 .search input {
   width: 95%;
-  height: 30px;
+  height: 100%;
   background: var(--primary);
   border: none;
   font-size: 14px;
@@ -423,9 +417,9 @@ nav {
   align-items: center;
   width: 100%;
   height: 100%;
-  border: 1px solid red;
   background: transparent;
   margin: 0 5px;
+  border: none;
 }
 
 #mg2 {
@@ -623,6 +617,7 @@ nav {
   height: 100%;
   display: flex;
   border: var(--border2);
+  background: #f6f6f6;
 }
 
 .movies {
@@ -786,7 +781,6 @@ nav {
 .section2 {
   width: 83%;
   height: 1280px;
-  border: 4px solid black;
   margin: 0 auto;
 }
 
@@ -826,7 +820,6 @@ nav {
 .trending_movies {
   width: 100%;
   height: 1220px;
-  border: 5px solid blue;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -1014,7 +1007,6 @@ footer > p {
 .container {
   width: 100%;
   height: 630px;
-  border: 3px solid red;
   position: relative;
 }
 
@@ -1032,14 +1024,14 @@ footer > p {
   width: 100%;
   height: 76%;
   display: flex;
-  border: 2px solid wheat;
-  margin-top: 100px;
+  position: absolute;
+  top: 70px;
+  z-index: 1;
 }
 
 .share {
   width: 270px;
   height: 100%;
-  border: 3px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1075,7 +1067,6 @@ footer > p {
 .movie_img {
   width: 230px;
   height: 75%;
-  border: 3px solid red;
   margin-right: 55px;
 }
 
@@ -1088,7 +1079,6 @@ footer > p {
 .description2 {
   width: 690px;
   height: 100%;
-  border: 3px solid red;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1211,13 +1201,13 @@ p.format > span {
 
 @media screen and (max-width: 700px) {
   .container {
-    height: fit-content;
+    height: 1200px;
   }
 
   .inner {
+    top: 0px;
     height: fit-content;
     flex-direction: column;
-    margin-top: 0;
     justify-content: center;
     align-items: center;
   }
@@ -1325,7 +1315,6 @@ p.format > span {
   display: none;
   align-items: center;
   justify-content: center;
-  border: 2px solid red;
 }
 
 @media screen and (max-width: 700px) {

@@ -2,8 +2,8 @@
   --primary: #e5e5e5;
   --white: #fff;
   --btn: #08ab4b;
-  --border: 2px solid red;
-  --border2: 2px solid green;
+  /* --border: 2px solid red;
+  --border2: 2px solid green; */
 }
 * {
   margin: 0;
@@ -41,7 +41,7 @@ nav {
 .left_side {
   width: 180px;
   height: 100%;
-  border: 3px solid black;
+  /* border: 3px solid black; */
 }
 
 .left_side > a > img {
@@ -113,7 +113,6 @@ nav {
 
   .left_side {
     width: 30%;
-    border: 3px solid red;
   }
 
   .right_side {
