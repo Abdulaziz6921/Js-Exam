@@ -910,7 +910,7 @@ nav {
     height: 80px;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 3% !important;
+    padding-left: 3% !important;
   }
 
   .trending_title > h2::before {
