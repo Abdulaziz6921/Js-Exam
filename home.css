@@ -327,12 +327,13 @@ nav {
 }
 
 .left_side {
-  width: 64%;
+  width: 66%;
   height: 40px;
   border: var(--border2);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 2px solid red;
 }
 
 .bar {
@@ -437,7 +438,7 @@ nav {
   }
 
   .left_side {
-    width: 50%;
+    width: 45%;
     justify-content: space-between;
   }
 
