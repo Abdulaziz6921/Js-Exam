@@ -70,7 +70,7 @@ nav {
 .right_side > li > a:hover {
   color: #08ab4b;
 }
-.right_side > button {
+.right_side > .btnSelf {
   display: none;
   justify-content: space-around;
   align-items: center;
@@ -81,10 +81,20 @@ nav {
   border-radius: 3px;
   position: relative;
 }
-.right_side > .list-items {
+
+.list-items {
+  display: none;
+}
+
+.btnBg {
+  background-color: var(--btn) !important;
+  color: white;
+}
+
+.show {
+  display: flex;
   width: 50%;
   height: 170px;
-  display: none;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
@@ -94,7 +104,6 @@ nav {
   background: #000;
   border-radius: 6px;
   font-size: 14px;
-  /* color: var(--primary); */
 }
 
 .right_side > .list-items > li {
@@ -124,7 +133,7 @@ nav {
   .right_side > li {
     display: none;
   }
-  .right_side > button {
+  .right_side > .btnSelf {
     display: flex;
   }
 }

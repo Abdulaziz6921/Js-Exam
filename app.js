@@ -2,17 +2,16 @@
 let menu = document.querySelector("#menu");
 let body = document.querySelector("#body");
 menu.addEventListener("click", () => {
-  let li = document.querySelector(".list-items");
-  li.style.display = "flex";
+  // let li = document.querySelector(".list-items");
+  // li.style.display = "flex";
 
-  menu.style.backgroundColor = "#08AB4B";
-  menu.style.color = "white";
+  let items = document.querySelector("#litems");
+  items.classList.toggle("show");
+  menu.classList.toggle("btnBg");
 });
 
 body.addEventListener("click", () => {
-  let li = document.querySelector(".list-items");
-  li.style.display = "none";
-
-  menu.style.backgroundColor = "white";
-  menu.style.color = "black";
+  let items = document.querySelector("#litems");
+  items.classList.toggle("show");
+  menu.classList.toggle("btnBg");
 });
